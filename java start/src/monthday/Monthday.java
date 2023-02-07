@@ -3,11 +3,14 @@ import java.util.Scanner;
 public class Monthday {
 
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
+		int a[]=new int[20];
+		
+		Object hg=new Scanner(System.in);
+		Scanner se =(Scanner)hg;
         System.out.println("enter the first number");
-        int f=sc.nextInt();
+        int f=se.nextInt();
         System.out.println("enter the second number");
-        int s=sc.nextInt();
+        int s=se.nextInt();
         if (f>s) {
         	System.out. println(f+"is greter number");
         }
