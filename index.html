@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/index.css"> -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Titillium Web", sans-serif;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .Product2 {
+            margin-top: 5rem;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            row-gap: 1rem;
+            column-gap: 1rem;
+            justify-content: center;
+        }
+
+        .cardpro {
+            background-color: rgb(39, 37, 37);
+            color: white;
+            height: 24rem;
+            width: 34rem;
+            border-radius: 1.5rem;
+            font-size: 1.5rem;
+            margin: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: start;
+            padding-top: 2rem;
+        }
+                                                /* cardpro-co */
+        /* .cardpro-co{
+            background-color: rgb(39, 37, 37);
+            color: white;
+            height: 24rem;
+            width: 34rem;
+            border-radius: 1.5rem;
+            font-size: 1.5rem;
+            margin: 0rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: start;
+            padding-top: 2rem;
+        } */
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.4s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+                                        /* flip-card-inner-co */
+        /* .flip-card-inner-co{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.4s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        } */
+
+        .flip-card-front {
+            width: 34rem;
+            height: 26.5rem;
+            margin-top: -2rem;
+            border-radius: 1rem;
+        }
+                                        /* flip-card-front-co */
+        /* .flip-card-front-co {
+            width: 34rem;
+            height: 26.5rem;
+            margin-top: -2rem;
+            border-radius: 1rem;
+        } */
+
+        .flip-card-front h1 {
+            margin-top: 0rem;
+            font-size: 2.5rem;
+        }
+
+        .flip-card-back {
+            color: white;
+            height: 26.5rem;
+            transform: rotateY(180deg);
+        }
+                                          /* flip-card-back-co */
+        /* .flip-card-back-co{
+            color: white;
+            transform: rotateY(180deg);
+        } */
+
+        .flip-card-back p {
+            margin-top: 40px;
+            font-size: 1.5rem;
+            word-spacing: 0.5rem;
+            padding: 0rem 0.6rem;
+        }
+
+        .cardpro:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            height: 110%;
+            width: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        #card1 {
+            background-image: url("xyz1.jpeg");
+            background-size: cover;
+        }
+
+        #card2 {
+            background-image: url("xyz6.jpeg");
+            background-size: cover;
+        }
+
+        #card3 {
+            background-image: url("xyz2.jpeg");
+            background-size: cover;
+        }
+
+        #card4 {
+            background-image: url("xyz3.jpeg");
+            background-size: cover;
+        }
+
+        #card5 {
+            background-image: url("xyz4.jpeg");
+            background-size: cover;
+        }
+
+        #card6 {
+            background-image: url("xyz5.jpeg");
+            background-size: cover;
+        }
+
+        @media only screen and (max-width :1130px) {
+            .Product2 {
+                grid-template-columns: auto auto;
+            }
+        }
+
+        @media only screen and (max-width :720px) {
+            .cardpro {
+                height: 15rem;
+                width: 15rem;
+                border-radius: 1.5rem;
+                font-size: 0.5rem;
+                padding-top: 2rem;
+            }
+
+            .flip-card-front h1 {
+                font-size: 2rem;
+            }
+
+            .flip-card-front,
+            .flip-card-back {
+                height: 116%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="Product2">
+        <div class="cardpro">
+            <div class="flip-card-inner">
+                <div id="card1" class="flip-card-front">
+                    <h1>Hey ❤️</h1>
+                </div>
+                <div class="flip-card-back">
+                    <p>You are my crush I am your crush.</p>
+                </div>
+            </div>
+        </div>
+        <div class="cardpro">
+            <div class="flip-card-inner">
+                <div id="card2" class="flip-card-front">
+                    <h1>Hello 🥰</h1>
+                </div>
+                <div class="flip-card-back">
+                    <p>I love your laugh, your smile, and everything about you.</p>
+                </div>
+            </div>
+        </div>
+        <div class="cardpro">
+            <div class="flip-card-inner">
+                <div id="card3" class="flip-card-front">
+                    <script>
+                        // let elename=document.getElementById("name");
+                        // document.write(elename);
+                        // function takevalue()
+                        // {
+                        //     var name=document.getElementById("name").value;
+                        //     document.write(" "+value);
+                        // }
+
+                    </script>
+                    <h1>Sanhavi🥰</h1>
+                </div>
+                <div class="flip-card-back">
+                    <p>I dream about you in colors that don't exist.</p>
+                </div>
+            </div>
+        </div>
+        <div class="cardpro">
+            <div class="flip-card-inner">
+                <div id="card4" class="flip-card-front">
+                    <h1> I</h1>
+                </div>
+                <div class="flip-card-back">
+                    <p>I can't stop thinking about you.</p>
+                </div>
+            </div>
+        </div>
+        <div class="cardpro">
+            <div class="flip-card-inner">
+                <div id="card5" class="flip-card-front">
+                    <h1>LOVE ❤️</h1>
+                </div>
+                <div class="flip-card-back">
+                    <p>I promise to always love and cherish you, no matter what.</p>
+                </div>
+            </div>
+        </div>
+        <div class="cardpro">
+            <div class="flip-card-inner">
+                <div id="card6" class="flip-card-front">
+                    <h1>You</h1>
+                </div>
+                <div class="flip-card-back">
+                    <p>I just need you and some sunsets.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
